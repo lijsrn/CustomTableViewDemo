@@ -13,6 +13,9 @@
 		E9F21D1C221BFB760026D9DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F21D1B221BFB760026D9DD /* Assets.xcassets */; };
 		E9F21D1F221BFB760026D9DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F21D1D221BFB760026D9DD /* LaunchScreen.storyboard */; };
 		E9F21D22221BFB760026D9DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21D21221BFB760026D9DD /* main.m */; };
+		E9F21D2B221BFBDE0026D9DD /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21D2A221BFBDE0026D9DD /* CustomTableView.m */; };
+		E9F21D2E221BFCE00026D9DD /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21D2D221BFCE00026D9DD /* NextViewController.m */; };
+		E9F21D31221C02630026D9DD /* CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F21D30221C02630026D9DD /* CellFrameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		E9F21D1E221BFB760026D9DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9F21D20221BFB760026D9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F21D21221BFB760026D9DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9F21D29221BFBDE0026D9DD /* CustomTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		E9F21D2A221BFBDE0026D9DD /* CustomTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		E9F21D2C221BFCE00026D9DD /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		E9F21D2D221BFCE00026D9DD /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		E9F21D2F221C02630026D9DD /* CellFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellFrameModel.h; sourceTree = "<group>"; };
+		E9F21D30221C02630026D9DD /* CellFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellFrameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,13 @@
 		E9F21D11221BFB750026D9DD /* CustomTableView */ = {
 			isa = PBXGroup;
 			children = (
+				E9F21D28221BFBC10026D9DD /* view */,
 				E9F21D12221BFB750026D9DD /* AppDelegate.h */,
 				E9F21D13221BFB750026D9DD /* AppDelegate.m */,
 				E9F21D15221BFB750026D9DD /* ViewController.h */,
 				E9F21D16221BFB750026D9DD /* ViewController.m */,
+				E9F21D2C221BFCE00026D9DD /* NextViewController.h */,
+				E9F21D2D221BFCE00026D9DD /* NextViewController.m */,
 				E9F21D18221BFB750026D9DD /* Main.storyboard */,
 				E9F21D1B221BFB760026D9DD /* Assets.xcassets */,
 				E9F21D1D221BFB760026D9DD /* LaunchScreen.storyboard */,
@@ -69,6 +81,17 @@
 				E9F21D21221BFB760026D9DD /* main.m */,
 			);
 			path = CustomTableView;
+			sourceTree = "<group>";
+		};
+		E9F21D28221BFBC10026D9DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E9F21D29221BFBDE0026D9DD /* CustomTableView.h */,
+				E9F21D2A221BFBDE0026D9DD /* CustomTableView.m */,
+				E9F21D2F221C02630026D9DD /* CellFrameModel.h */,
+				E9F21D30221C02630026D9DD /* CellFrameModel.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F21D2E221BFCE00026D9DD /* NextViewController.m in Sources */,
+				E9F21D31221C02630026D9DD /* CellFrameModel.m in Sources */,
 				E9F21D17221BFB750026D9DD /* ViewController.m in Sources */,
 				E9F21D22221BFB760026D9DD /* main.m in Sources */,
+				E9F21D2B221BFBDE0026D9DD /* CustomTableView.m in Sources */,
 				E9F21D14221BFB750026D9DD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
