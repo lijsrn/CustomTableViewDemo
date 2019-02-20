@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"自定义tableView";
     CustomTableView *tableView = [[CustomTableView alloc]  initWithFrame:self.view.bounds];
     tableView.delegate = self;
     [tableView reloadData];
